@@ -1,0 +1,178 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMonnIgE0lcUE8Gm4CmSrre",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/vigneshvemula/OCTANET__MAY/blob/main/task1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#for stopping program execution for some time\n",
+        "import time\n",
+        "\n",
+        "print(\"Please insert Your CARD\")\n",
+        "\n",
+        "#for card processing\n",
+        "time.sleep(5)\n",
+        "\n",
+        "password = 1234\n",
+        "\n",
+        "#taking atm pin from user\n",
+        "pin = int(input(\"enter your atm pin \"))\n",
+        "\n",
+        "#user account balance\n",
+        "balance = 5000\n",
+        "\n",
+        "#checking pin is valid or not\n",
+        "if pin == password:\n",
+        "    #loop will run user get free\n",
+        "    while True:\n",
+        "\n",
+        "        #Showing  info to user\n",
+        "\n",
+        "        print(\"\"\"\n",
+        "\t\t\t1 == balance\n",
+        "\t\t\t2 == withdraw balance\n",
+        "\t\t\t3 == deposit balance\n",
+        "\t\t\t4 == exit\n",
+        "\t\t\t\"\"\"\n",
+        "              )\n",
+        "\n",
+        "        try:\n",
+        "             #taking an option from user\n",
+        "            option = int(input(\"Please enter your choise \"))\n",
+        "        except:\n",
+        "            print(\"Please enter valid option\")\n",
+        "\n",
+        "        #for option 1\n",
+        "        if option == 1:\n",
+        "            print(f\"Your current balance is {balance}\")\n",
+        "\n",
+        "        if option == 2:\n",
+        "\n",
+        "            withdraw_amount = int(input(\"please enter withdraw_amount \"))\n",
+        "\n",
+        "\n",
+        "\n",
+        "            balance = balance - withdraw_amount\n",
+        "\n",
+        "            print(f\"{withdraw_amount} is debited from your account\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "            print(f\"your updated balance is {balance}\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "        if option == 3:\n",
+        "\n",
+        "            deposit_amount = int(input(\"please enter deposit_amount\"))\n",
+        "\n",
+        "            balance = balance + deposit_amount\n",
+        "\n",
+        "\n",
+        "\n",
+        "            print(f\"{deposit_amount} is credited to your account\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "            print(f\"your updated balance is {balance}\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "        if option == 4:\n",
+        "\n",
+        "            break\n",
+        "\n",
+        "\n",
+        "else:\n",
+        "    print(\"wrong pin Please try again\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Bo-YWJze0mh6",
+        "outputId": "6c867ded-662a-46cc-a951-ed1330fc368f"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Please insert Your CARD\n",
+            "enter your atm pin 1234\n",
+            " \n",
+            "\t\t\t1 == balance\n",
+            "\t\t\t2 == withdraw balance\n",
+            "\t\t\t3 == deposit balance\n",
+            "\t\t\t4 == exit\n",
+            "\t\t\t\n",
+            "Please enter your choise 1\n",
+            "Your current balance is 5000\n",
+            " \n",
+            "\t\t\t1 == balance\n",
+            "\t\t\t2 == withdraw balance\n",
+            "\t\t\t3 == deposit balance\n",
+            "\t\t\t4 == exit\n",
+            "\t\t\t\n",
+            "Please enter your choise 2\n",
+            "please enter withdraw_amount 3000\n",
+            "3000 is debited from your account\n",
+            "your updated balance is 2000\n",
+            " \n",
+            "\t\t\t1 == balance\n",
+            "\t\t\t2 == withdraw balance\n",
+            "\t\t\t3 == deposit balance\n",
+            "\t\t\t4 == exit\n",
+            "\t\t\t\n",
+            "Please enter your choise 3\n",
+            "please enter deposit_amount5000\n",
+            "5000 is credited to your account\n",
+            "your updated balance is 7000\n",
+            " \n",
+            "\t\t\t1 == balance\n",
+            "\t\t\t2 == withdraw balance\n",
+            "\t\t\t3 == deposit balance\n",
+            "\t\t\t4 == exit\n",
+            "\t\t\t\n",
+            "Please enter your choise 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "1GJ6Cf7t0LOm"
+      },
+      "outputs": [],
+      "source": []
+    }
+  ]
+}
